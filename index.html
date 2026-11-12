@@ -1,267 +1,180 @@
-
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
-    <title>My Personal Portfolio</title>
-
-    <style>
-        body {
-            font-family: Arial;
-            margin: 0;
-            background: #F3F0F8;
-            color: #222;
-        }
-
-        header {
-            background: #111111;
+  <title>Krishna Vidyarthi</title>
+  <style>
+        body{
+            font-family:Arial;
+            margin:0;}
+        header{
+            background:#111111;
+            color:white;
+            text-align:center;
+            padding:30px;}
+        .profile{
+            width:150px;
+            height:150px;
+            border-radius:100px;
+            object-fit:cover;}
+        nav{
+            background:#24202B;
+            text-align:center;
+            position:sticky;
+            top:0;
+            z-index: 10;}
+        nav a{
             color: white;
-            text-align: center;
-            padding: 30px;
-            border-bottom: 4px solid #8055C7;
-        }
-
-        .profile {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid #8055C7;
-        }
-
-        nav {
-            background: #24202B;
-            text-align: center;
-            padding: 12px;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
+            text-decoration:none;
             margin: 10px;
-            display: inline-block;
-        }
-
-        nav a:hover {
-            color: #B99AEF;
-        }
-
-        main {
-            width: 80%;
-            margin: 25px auto;
-        }
-
-        section, article, aside {
-            background: white;
+            display: inline-flex;}
+        main{
+            width: 95%;
+            margin: 25px auto;}
+        section, article, aside{
             padding: 22px;
             margin-bottom: 20px;
-            border-radius: 10px;
-            border-left: 4px solid #8055C7;
-            box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-        }
-
-        h2 {
-            color: #7042B0;
-            border-bottom: 2px solid #E5D9F5;
-            padding-bottom: 8px;
-        }
-
-        h3 {
-            color: #55338C;
-        }
-
-        button {
+            border: purple 1px solid;}
+        h2{color: #7042B0;
+            border-bottom: 2px solid purple;
+            padding-bottom: 8px;}
+        h3{
+            color: #55338C;}
+        button{
             padding: 10px 16px;
             cursor: pointer;
             border: none;
             border-radius: 6px;
             background: #8055C7;
-            color: white;
-        }
-
-        button:hover {
-            background: #603B9E;
-        }
-
-        .skill {
+            color: white;}
+        .skill{
             display: flex;
-            align-items: center;
+            align-items:center;
             gap: 15px;
-            margin: 18px 0;
-        }
-
-        .skill img {
+            margin: 18px 0;}
+        .skill img{
             width: 45px;
             height: 45px;
-            object-fit: contain;
-        }
-
-        progress {
+            object-fit: contain;}
+        progress{
             width: 80%;
-            accent-color: #8055C7;
-        }
-
-        .hobby {
+            accent-color: #8055C7;}
+        .hobby{
             display: inline-block;
             text-align: center;
-            margin: 10px;
-        }
-
-        .hobby img {
+            margin: 10px;}
+        .hobby img{
             width: 130px;
             height: 100px;
             object-fit: cover;
             border-radius: 8px;
-            border: 2px solid #8055C7;
-        }
-
-        footer {
+            border: 2px solid #8055C7;}
+        footer{
             background: #111111;
             color: white;
             text-align: center;
             padding: 12px;
-            border-top: 4px solid #8055C7;
-        }
-
-        .dark {
+            border-top: 4px solid #8055C7;}
+        .dark{
             background: #18151F;
-            color: white;
-        }
-
+            color: white;}
         .dark section,
         .dark article,
-        .dark aside {
+        .dark aside{
             background: #292432;
             color: white;
-            border-left-color: #A77BEA;
-        }
-
-        .dark h2 {
+            border-left-color: #A77BEA;}
+        .dark h2{
             color: #C6A6FF;
-            border-bottom-color: #514064;
-        }
-
-        .dark h3 {
-            color: #C6A6FF;
-        }
-
-        .dark nav {
-            background: #0C0A10;
-        }
-
-        .dark footer {
-            background: #0C0A10;
-        }
-
-        @media screen and (max-width: 600px) {
-            main {
-                width: 90%;
-            }
-
-            nav a {
-                margin: 5px;
-            }
-
-            .hobby img {
-                width: 100px;
-            }
+            border-bottom-color: #514064;}
+        .dark h3{
+            color: #C6A6FF;}
+        .dark nav{
+            background: #0C0A10;}
+        .dark footer{
+            background: #0C0A10;}
+        @media(max-width: 600px){
+            main{
+                width: 90%; }
+            nav a{
+                margin: 5px;}
+            .hobby img{
+                width: 100px;}
         }
     </style>
 </head>
-
 <body>
-
 <header id="home">
-
-    <img src="https://media.licdn.com/dms/image/v2/D5603AQG3oBAVVCe19g/profile-displayphoto-crop_800_800/B56aGCoyvQHoAM-/0/1793193095711?e=1796256000&v=beta&t=yVzGO5D9-W5gDTpVURmYxOLRa1Ja9p25YRxXti77j18" alt="My Profile Photo" class="profile">
-
+   <img src="https://media.licdn.com/dms/image/v2/D5603AQG3oBAVVCe19g/profile-displayphoto-crop_800_800/B56aGCoyvQHoAM-/0/1793193095711?e=1796256000&v=beta&t=yVzGO5D9-W5gDTpVURmYxOLRa1Ja9p25YRxXti77j18" alt="Krishna Vidhyarhti" class="profile">
     <h1>Krishna Vidhyarthi</h1>
-    <p>BST Student</p>
-    <p>Welcome to my personal portfolio website!</p>
-
+    <p>University Student</p>
+    <p>Hi.</p>
     <button onclick="changeMode()">Dark / Light Mode</button>
-
 </header>
-
 <nav>
-    <a href="#home">Home</a>
+   <a href="#home">Home</a>
     <a href="#about">About</a>
-    <a href="#education">Education</a>
+  <a href="#education">Education</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#hobbies">Hobbies</a>
     <a href="#achievements">Achievements</a>
     <a href="#contact">Contact</a>
 </nav>
-
 <main>
-
     <section id="about">
         <h2>About Me</h2>
         <p>Hi, I am a student who is equally obsessed with beating high scores and building the code behind them. Also interested in learning system development/design and sleeping.</p>
     </section>
-
     <section id="education">
-        <h2>Education</h2>
+   <h2>Education</h2>
         <p>I am currently pursuing my college education. (1st year)</p>
         <p>Course: Computer science: AI-ML</p>
     </section>
-
     <article id="skills">
         <h2>My Skills</h2>
-
         <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
-            <div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python lobo">
+      <div>
                 <p>Python - 70%</p>
                 <progress value="70" max="100"></progress>
-            </div>
+          </div>
         </div>
-
         <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" alt="Rust">
-            <div>
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-original.svg" alt="Rust lobo">
+          <div>
                 <p>Rust - 50%</p>
                 <progress value="50" max="100"></progress>
             </div>
         </div>
-
         <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML lobo">
             <div>
                 <p>HTML - 70%</p>
                 <progress value="70" max="100"></progress>
             </div>
         </div>
-
         <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
-            <div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS logo">
+        <div>
                 <p>CSS - 60%</p>
                 <progress value="60" max="100"></progress>
             </div>
         </div>
-
         <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
-            <div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo">
+      <div>
                 <p>Java - 50%</p>
                 <progress value="50" max="100"></progress>
             </div>
         </div>
-
         <div class="skill">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" logo>
             <div>
-                <p>C# - 80%</p>
+         <p>C# - 80%</p>
                 <progress value="80" max="100"></progress>
             </div>
         </div>
-
     </article>
-
     <section id="projects">
         <h2>My Projects</h2>
 
@@ -274,54 +187,40 @@
         <p>Technologies Used: HTML, JS and CSS</p>
 
         <h3>Future Projects</h3>
-        <p>I plan to create more programming projects as I learn new skills.</p>
+        <p>No clue.</p>
     </section>
-
     <aside id="hobbies">
         <h2>Hobbies and Interests</h2>
 
         <div class="hobby">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQgV6nJ7w9dy6TB-OQNqJLPcXgHXinH_38Njb2sr-VQiu45P7FYTwtJJsO&s=10?w=300" alt="Gaming">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQgV6nJ7w9dy6TB-OQNqJLPcXgHXinH_38Njb2sr-VQiu45P7FYTwtJJsO&s=10?w=300" alt="Gamin Shark">
             <p>Playing Games</p>
         </div>
 
-        <div class="hobby">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaFH9dm1h5lAbfoz5xBFqkXUlfaauelouUOJ0hEg7qm5EfvlmYJQ-QlCQ&s=10?w=300" alt="Music">
+     <div class="hobby">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaFH9dm1h5lAbfoz5xBFqkXUlfaauelouUOJ0hEg7qm5EfvlmYJQ-QlCQ&s=10?w=300" alt="Listening to music shark">
             <p>Listening to Music</p>
         </div>
-
         <div class="hobby">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9y4xg4cMHXnOqsdGj9HGk9loalCHW222zQOZSZG5Ngf0lMQ9pI98FkxnX&s=10?w=300" alt="Sleeping">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9y4xg4cMHXnOqsdGj9HGk9loalCHW222zQOZSZG5Ngf0lMQ9pI98FkxnX&s=10?w=300" alt="Sleeping shark">
             <p>Sleeping</p>
         </div>
-
     </aside>
-
     <section id="achievements">
         <h2>Achievements</h2>
-        <p>I am currently learning programming and developing my technical skills.</p>
-        <p>I hope to participate in more competitions and workshops in the future.</p>
+        <p>None rn.</p>
+        <p>Defenitely not lazy.</p>
     </section>
-
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: vidhyarthikrishna@gmail.com</p>
         <p>Phone: 9136015871</p>
     </section>
-
 </main>
-
-<footer>
-    <p>© 2026 Krishna Vidhyarthi</p>
-</footer>
-
 <script>
-
     function changeMode() {
         document.body.classList.toggle("dark");
     }
-
 </script>
-
 </body>
 </html>
